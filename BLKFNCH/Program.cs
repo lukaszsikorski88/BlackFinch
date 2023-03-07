@@ -31,7 +31,7 @@ while (!exitRequested)
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("No reports available.");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Press 1 to run eligibility process or X to exit.");
+            Console.WriteLine("Press X to exit or any other key to run eligiblity process.");
             continue;
         case 'r' or 'R':
         {
