@@ -242,3 +242,7 @@ public enum FillingFormPart
     AssetValue,
     CreditScore
 };
+
+// for prod I would definitely improve reporting and write kind of EligiblityEngine to run eligibility in self contained code, make it cleaner and easier to read,
+// also would put reporting in something like q queue and/or hangfire job as this would definitely be longer process that would take some time to run all aggregations on big amount of data
+// also would put some more validation to fields, and implement cutting off from further typing and unnecessary processing if first condition fails (loan amount higher than 1,500,000 or lower 100,000) to save user time.
