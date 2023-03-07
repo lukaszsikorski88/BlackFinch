@@ -212,7 +212,7 @@ public static class LoanCheckExtensions
                     return loanCheckRequest.CreditScore >= 900;
                 }
 
-                return !(loanCheckRequest.CalculateLTV() > 90); 
+                return !(loanCheckRequest.CalculateLTV() >= 90); 
             
              // Based on this 
              //   If the LTV is less than 60%, the credit score of the applicant must be 750 or more
